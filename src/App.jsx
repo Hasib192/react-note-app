@@ -4,13 +4,12 @@ import Content from "./components/content/Content";
 import Footer from "./components/footer/Footer";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import toast from "react-hot-toast";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
-      <Header />
+      <Header title="Simple React App for Module 14 Assignment" />
       <Content />
       <Footer />
     </div>
