@@ -1,5 +1,5 @@
 import { useState } from "react";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 const Content = () => {
   const [textAreaValue, setTextAreaValue] = useState("");
@@ -29,6 +29,7 @@ const Content = () => {
           <button type="button" className="btn btn-primary" onClick={add_note}>
             Submit
           </button>
+          <Toaster />
           <div className="mt-4">
             <div className="card">
               <div className="card-body">{note?.length > 0 ? note : "No notes. Type New notes"}</div>
